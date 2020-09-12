@@ -1,0 +1,60 @@
+/*
+<Project Name> CSS Module
+ControlPanel
+*/
+
+.col-md-4 {
+    border: solid aliceblue;
+}
+
+.highlight {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1f770d;
+    border: none;
+    padding: 5px;
+}
+
+.holiday {
+    color: red;
+    border: none;
+    padding: 5px;
+}
+
+.workingday {
+    border: none;
+    padding: 5px;
+}
+
+#event-details-area {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 4px;
+    border: solid white 5px;
+    margin-top: 5px;
+    overflow: scroll;
+    max-height: 135px;
+}
+
+.tasktracker-item {
+    background: lavender;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.react-calendar__navigation__label, .react-calendar__navigation__next-button, .react-calendar__navigation__next2-button, .react-calendar__navigation__prev-button, .react-calendar__navigation__prev2-button{
+    border:none;
+}
+.react-calendar__month-view__days__day:hover, :focus{
+    background-color: yellow;
+    /* border: solid #000000; */
+    color:#000000;
+}
+#iframecust{
+    border: none;
+    height: 521px;
+    width: 100%;    
+}

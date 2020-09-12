@@ -1,26 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ControlPanel from './ControlPanel/ControlPanel.jsx';
+import {
+    BrowserRouter as Router,
+    HashRouter,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return (<div >
+        <Router >
+            <HashRouter >
+                <Switch >
+                    <Route exact path="/" component={ControlPanel} />
+                    { /* <Route path="/secondpage" component={Secondcomponent} /> */}
+                    { /* <Route component={Not_found} />         //error page for non-existing paths */}
+                </Switch>
+            </HashRouter>
+        </Router>
     </div>
-  );
+    );
 }
 
 export default App;
